@@ -28,7 +28,7 @@ VALUES
 (1014, 'Meera Shah', 'Personal Loan', 250000, 380000, 610, 92),
 (1015, 'Karan Malhotra', 'Business Loan', 1750000, 1900000, 720, 53);
 SELECT application_id, customer_name, risk_score,
-       RANK() OVER (ORDER BY risk_score DESC) AS risk_rank
+      RANK() OVER (ORDER BY risk_score DESC) AS risk_rank
 FROM loan_applications;
 
 SELECT 
