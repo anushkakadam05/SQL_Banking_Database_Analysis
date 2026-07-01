@@ -103,7 +103,8 @@ WHERE t.TransactionType = 'Deposit'
   AND t.Amount > 50000
 ORDER BY t.Amount DESC;
 
-
+SELECT AVG(Amount) AS Average_amount
+FROM Transactions_2;
 
 
 
